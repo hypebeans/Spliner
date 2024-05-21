@@ -11,19 +11,24 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
+            
             ChibiTori()
-                
+
             VStack {
+                //TODO: ロゴ作成
                 Text("うさぎとちび鳥")
                     .font(.title)
                     .fontWeight(.bold)
                 
                 Spacer()
                 
+                //MARK: サンプル順番
                 Image("KawaiiUsagi")
                     .resizable()
+                    .cornerRadius(30)
                     .aspectRatio(contentMode: .fit)
                     .scaleEffect(0.75)
+                    .shadow(color: .black, radius: 50, x: 5, y: 5)
             }
             
             .padding()
